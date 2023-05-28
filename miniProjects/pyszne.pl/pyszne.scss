@@ -1,0 +1,207 @@
+$primary-color: #fb6100;
+$type-section-background: #f8f5f2;
+$type-section-background-2: #d7d7d7;
+$colors: #e1bbbb, #e1c6bb, #eeeccc, #d7e1bb, #bbe1ca, #bbdce1, #bcbbe1, #d9bbe1;
+$margin-main: 7rem;
+
+body{
+    margin: 0;
+    header{
+        .logo{
+            font-size: 1.5rem;
+        }
+        span:first-of-type{
+            font-weight: 600;   
+        }
+        .address{
+            div{
+                position: relative;
+                top: 5px;
+                margin-bottom: 3px;
+                font-weight: 300;
+                letter-spacing: 2px; 
+            }
+            border-bottom: 2px white solid;
+        }
+        background-color: $primary-color;
+        color: white;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+        button{
+            background-color: #fb6100;
+            color: white;
+            border: 0;
+            transition-duration: 0.4s;
+
+        }
+    }
+    
+    .type-section{
+        padding: 1rem;
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 1px solid #d7d7d7;
+        padding-bottom: 0;
+        .buttons{
+            button{
+                border: none;
+                font-size: 1.2rem;
+                background-color: white;
+                padding-right: 2rem;
+                padding-left: 2rem;
+                padding-bottom: 0.5rem;
+            }
+        }
+        button:hover{
+            border-bottom: 1px #fb6100 solid;
+            color: #fb6100;
+        }
+    }
+    .category-section{
+        margin-left: $margin-main;
+        padding: 1rem;
+        display: flex;
+        gap:1rem;
+        button{
+            background-color: white;
+            border: none;
+        }
+        button:last-of-type{
+            color: #fb6100;
+            font-weight: bold;
+        }
+        .active{
+            border-radius: 20px;
+            background-color: #fb6100;
+            color: white;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+    .main-section{
+        margin-left: $margin-main;
+        display: flex;
+        flex-wrap: nowrap;
+        .left-main-section{
+            margin-right: 5rem;
+            min-width: 14rem;
+            .header{
+                font-weight: bold;
+            }
+            .header{
+                margin-bottom: 1.5rem;
+            }
+            div{
+                .header{
+                    margin-bottom: 1rem;
+                }
+                padding: 0.2rem;
+            }
+            div:nth-of-type(3){
+                .header{
+                    margin-top: 1rem;
+                    margin-bottom: 0.5rem;
+                }
+                    i{
+                    color: #d6d6d6;
+                }
+                }
+            }
+            .right-main-section{
+                .search{
+                    input{
+                        width: 40rem;
+                        height: 1.5rem;
+                        padding: 2px;
+                        padding-left: 0.5rem;
+                    }
+                    button{
+                        margin-left: 1rem;
+                        border: none;
+                        background-color: white;
+                        margin-bottom: 1.5rem;
+                    }
+                }
+                div:nth-of-type(2){
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 1rem ;
+                    .header{
+                        margin-top: 2rem;
+                        letter-spacing: 1px;
+                        font-weight: bold;
+                        width: 100%;
+                    }
+                    $licznik: 1;
+                    @for $i from 1 through 2{
+                        @each $color in $colors{
+                            .item:nth-of-type(#{$licznik}){
+                                .pic{
+                                    background-color: $color;
+                                }
+                            }
+                            $licznik: $licznik + 1;
+                        }
+                    }  
+                    .item{
+                        display: flex;
+                        margin: 0;
+                        border: solid #f8f5f2 1px;
+                        width: 60rem;
+                        .pic{
+                            height: 180px;
+                            width: 20rem;
+                        }
+                        .logo{
+                            position: absolute;
+                            display: flex;
+                            border-radius: 50%;
+                            // width: 2rem;
+                            // height: 2rem;
+                            background-color: white;
+                            color: #fb6100;
+                            padding: 1.5rem;
+                            font-weight: bold;
+                            margin-top: 3rem;
+                            margin-left: 17rem;
+                            height: 46px;
+                            .name{
+                                align-self: center;
+                                transform: rotate(-10deg);
+                            }
+                        }
+                        .info{
+                            margin-left: 4rem;
+                            color: #5b5b5b;
+                            .header{
+                                margin-top: 2rem;
+                                font-size: 1.5rem;
+                            }
+                            .description{
+                                margin-bottom: 1rem;
+                            }
+                            .content{
+                                display: flex;
+                                flex-wrap: wrap;
+                                gap: 3rem;
+                                .star{
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    i{
+                                        color: #fb6100;
+                                        margin-right: 3px;
+                                    }   
+                                }
+                                div{
+                                    display: flex;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    }
+    
+}

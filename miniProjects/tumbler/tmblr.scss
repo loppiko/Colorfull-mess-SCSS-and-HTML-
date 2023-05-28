@@ -1,0 +1,304 @@
+$colors: #e1bbbb, #e1c6bb, #eeeccc, #d7e1bb, #bbe1ca, #bbdce1, #bcbbe1, #d9bbe1;
+
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000000;
+    header{
+        padding: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid #404040;
+        .left{
+            display: flex;
+            gap: 1.5rem;
+            .fa-bell{
+                align-self: center;
+                color: white;
+                font-size: 2rem;
+            }
+            input{
+                align-self: center;
+                background-color: #404040;
+                border: none;
+                border-radius: 15px;
+                width: 30vw;
+                height: 2rem;
+            }
+        }
+        .right{
+            display: flex;
+            gap: 2rem;
+            button{
+                align-self: center;
+                border: none;
+                height: 2.5rem;
+                width: 8rem;
+                font-size: 15px;
+                font-weight: bold;
+                border-radius: 5px;
+            }
+            .green{
+                background-color: #00cf35;
+            }
+            .blue{
+                background-color: #00b8ff;
+            }
+        }
+    }
+    main{
+        margin-top: 3rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        display: flex;
+        flex-wrap: wrap;
+        .left{
+            width: 75%;
+            .header{
+                display: flex;
+                gap: 0.5rem;
+                border-bottom: 1px solid #404040;
+                button{
+                    border: none;
+                    background-color: #000000;
+                    color: white;
+                    font-size: 17px;
+                    font-weight: bold;
+                    padding: 1rem;
+                }
+                button:hover{
+                    color: #0095cf;
+                    cursor: pointer;
+                    border-bottom: solid 2px #0095cf;
+                }
+                .icons{
+                    align-self: center;
+                    margin-left: 2rem;
+                    i{
+                        color: white;
+                        font-size: 25px;
+                    }
+                }
+            }
+            .content{
+                margin-top: 2rem;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1.5rem;
+                .pic{
+                    height: 20rem;
+                    width: 13rem;
+                    background-color: #404040;
+                    padding: 1rem;
+                    border-radius: 10px;
+                    .dark_background{
+                        .top{
+                            .left_header{
+                                display: flex;
+                                flex-wrap: wrap;
+                                color: white;
+                                .logo{
+                                    width: 35px;
+                                    height: 35px;
+                                    background-color: hotpink;
+                                    border-radius: 50%;
+                                    margin-right: 8px;
+                                }
+                                .name_div{
+                                    font-size: 13px;
+                                    font-weight: bold;
+                                }
+                                .subscribe{
+                                    position: relative;
+                                    width: 80%;
+                                    font-size: 13px;
+                                    font-weight: bold;
+                                    color: #0095cf;
+                                    left: 40px;
+                                    bottom: 15px;
+                                }
+                            }
+                            .right-header{
+                                button{
+                                    position: relative;
+                                    background-color: #404040;
+                                    border: none;
+                                    bottom: 25px;
+                                    left: 20px;
+                                    .fa-angle-double-up{
+                                        color: white;
+                                        font-size: 20px;
+                                    }
+                                }
+                                
+                            }
+                        }
+                        .photo{
+                            width: 13rem;
+                            height: 14rem;
+                            border-radius: 20px;
+                        }
+                        .bottom{
+                            padding-top: 1rem;
+                            color: lightgray;
+                            margin: 0;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            .notki{
+                                font-size: 13px;
+                                font-weight: bold;
+                            }
+                            .bottom-buttons{
+                                button{
+                                    border: none;
+                                    background-color: #404040;
+                                    i{
+                                        color: lightgrey;
+                                        font-size: 16px;
+                                    }
+                                }
+                                button:nth-of-type(1){
+                                    i{
+                                        color: rgb(109, 0, 0);
+                                    }
+                                }
+                                button:nth-of-type(2){
+                                    i{
+                                        color: rgb(174, 0, 209);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                // $licznik: 1;
+                // @for $i from 1 through 2{
+                //     @each $color in $colors{
+                //         .pic:nth-of-type(#{$licznik}){
+                //             .photo{
+                //                 background-color: $color;
+                //             }
+                //             $licznik: $licznik + 1;
+                //         }
+                //     }
+                // }
+            }
+            
+        }
+        .right{
+            flex: 5%;
+            height: 50rem;
+            background-color: #000000;
+            padding: 1rem;
+            .popular_blogs{
+                border-radius: 10px;
+                background-color: #404040;
+                .blog-header{
+                    // background-color: #404040;
+                    padding: 1rem;
+                    font-size: 14px;
+                    color: white;
+                    font-weight: bold;
+                    border-bottom: 1px solid grey;
+                }
+                .content{
+                    // height: 10rem;
+                    // background-color: #404040;
+                    .one-block{
+                        display: flex;
+                        flex-wrap: wrap;
+                        padding: 0.5rem;
+                        color: white;
+                        font-size: 12px;
+                        gap: 0.5rem;
+                        // justify-content: space-around;
+                        .logo{
+                            background-color: khaki;
+                            width: 35px;
+                            height: 35px;
+                            border-radius: 10px;
+                        }
+                        .name{
+                            font-weight: bold;
+                        }
+                        .subscribe{
+                            width: 50%;
+                            text-align: end;
+                            font-weight: bold;
+                            color: #0095cf;
+                            align-self: center;
+                        }
+                        .description{
+                            position: relative;
+                            left: 43px;
+                            bottom: 22px;
+                        }
+                    }
+                }
+            }
+            .see_more{
+                width: 100%;
+                padding-top: 1.5rem;
+                padding-bottom: 1.5rem;
+                text-align: center;
+                border-top: lightgray 1px solid;
+                color: #0095cf;
+                font-size: 14px;
+                font-weight: bold;
+            }
+        }
+        .change-palet{
+            margin-top: 1rem;
+            padding: 1rem;
+            border-radius: 10px;
+            background-color: #404040;
+            i{
+                font-size: 15px;
+                color: #0095cf;
+                span{
+                    margin-left: 15px;
+                    font-weight: bold;
+                    color: white;
+                }
+            }
+        }
+        .sponsored-by{
+            padding: 1rem;
+            font-size: 18px;
+            color: white;
+            border-bottom: 1px solid lightgray;
+        }
+        .last-of-all{
+            padding: 1rem;
+            font-size: 13px;
+            color: white;
+        }
+        .sticky{
+            margin-top: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            position: sticky;
+            gap: 1rem;
+            span{
+                color: #0095cf;
+                font-size: 9px;
+                font-weight: bold;
+            }
+        }
+
+    }
+}
+$licznik:1;
+@for $i from 1 through 10 {
+    @each $color in $colors{
+        .pic:nth-of-type(#{$licznik}){
+            .photo {
+                background-color: $color;
+                
+            }
+        }
+        $licznik:$licznik+1;
+    }
+}
