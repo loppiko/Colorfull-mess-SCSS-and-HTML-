@@ -1,0 +1,497 @@
+$header-color: #010409;
+$main-color: #0d1117;
+$main-text-color: #FFFFFF;
+$grey-text-color: #7d8590;
+$border: #30363d 1px solid;
+$border-wider: #30363d 2px solid;
+$unique-grey-button: #21262d;
+$gradient: linear-gradient(to right, purple , lightblue);
+$main-section-width: 78rem;
+$main-section-gap: 2rem;
+$margin-table-gap: 0.5rem;
+$gap-between-boxes: 1rem;
+$color-of-my-child: #161b22;
+$color-of-my-child-lv1: #0e4429;
+$color-of-my-child-lv2: #006d32;
+$color-of-my-child-lv3: #26a641;
+$color-of-my-child-lv4: #39d353;
+$active-color: #2f81f7;
+$loop-colors: lightblue, lightcoral, lightsteelblue, lightgreen, lightsalmon;
+
+.body {
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin: 0;
+    background-color: $main-color;
+    color: $main-text-color;
+    button:hover {
+        cursor: pointer;
+    }
+    .header {
+        background-color: $header-color;
+        height: 75px;
+        padding: 1.3rem;
+        border-bottom: $border;
+        .higher{
+            display: flex;
+            justify-content: space-between;
+            .left-side {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1rem;
+                align-items: center;
+                .bar {
+                    display: flex;
+                    padding: 0.5rem;
+                    width: min-content;
+                    border: $border;
+                    font-size: 20px;
+                    border-radius: 10px;
+                    color: grey;
+                }
+                .github-icon {
+                    font-size: 40px;
+                }
+                .nickname {
+                    font-weight: bold;
+                }
+            }
+            .right-side {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 1rem;
+                i {
+                    font-size: 20px;
+                    padding: 0.3rem;
+                    color: grey;
+                }
+                .input {
+                    display: flex;
+                    align-items: center;
+                    .fa-search {
+                        font-size: 15px;
+                        margin-left: 5px;
+                        position: absolute;
+                    }
+                    input {
+                        color: white;
+                        border: $border;
+                        background-color: $header-color;
+                        height: 30px;
+                        border-radius: 5px;
+                        width: 20rem;
+                    }
+                }
+                .right-buttons {
+                    background-color: $header-color;
+                    border: $border;
+                    border-radius: 10px;
+                }
+                .avatar {
+                    width: 27px;
+                    height: 27px;
+                    background-image: $gradient;
+                    border-radius: 50%;
+                }
+            }
+        }
+        .lower {
+            padding: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            .buttons-belt {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1.5rem;
+                span {
+                    font-size: 14px;
+                }
+                i {
+                    font-size: 20px;
+                    margin-right: 10px;
+                }
+                button {
+                    padding: 0.35rem;
+                    padding-bottom: 0.4rem;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    border: none;
+                    background-color: $header-color;
+                }
+                button:first-of-type {
+                    span {
+                        font-weight: bold;
+                    }
+                }
+                button:hover {
+                    border-radius: 7px;
+                    border-bottom-right-radius: 0;
+                    border-bottom-left-radius: 0;
+                    background-color: #30363d;
+                }
+                #active {
+                    border-bottom: 2px solid orangered;
+                }
+            }
+        }
+    }
+    .main {
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+        .main-section {
+            margin-top: 3rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: $main-section-gap;
+            width: $main-section-width;
+            .left-side {
+                color: $grey-text-color;
+                width: calc(0.25 * $main-section-width);
+                .big-avatar {
+                    border-radius: 50%;
+                    background-image: $gradient;
+                    width: 18rem;
+                    height: 18rem;
+                    border: $border-wider;
+                    .lets-smile {
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 20px;
+                        height: 20px;
+                        font-size: 20px;
+                        top: 250px;
+                        left: 250px;
+                        background-color: $main-color;
+                        border: $border;
+                        padding: 0.5rem;
+                        border-radius: 50%;                        
+                        .fa-smile-o {
+                            color: white;
+                        }
+                    }
+                    
+                }
+                .nickname {
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                    font-size: 19px;
+                }
+                .edit-profile {
+                    background-color: $unique-grey-button;
+                    border: $border;
+                    color: $main-text-color;
+                    padding: 0.5rem;
+                    width: 100%;
+                    text-align: center;
+                    border-radius: 10px;
+                }
+                .followers {
+                    margin-top: 1rem;
+                    .number {
+                        color: $main-text-color;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .right-side {
+                width: calc(0.75 * $main-section-width - $main-section-gap);
+                .upper-part {
+                    display: flex;
+                    justify-content: space-between;
+                    // width: max-content;
+                    .title {
+                        font-size: 1rem;
+                        color: $main-text-color;
+                    }
+                    .customize {
+                        font-size: 0.8rem;
+                        color: $grey-text-color;
+                        background-color: $main-color;
+                        border: none;
+                    }
+                    .customize:hover {
+                        color: $active-color;
+                    }
+                }
+                .list-of-repos {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: $gap-between-boxes;
+                    margin-top: 1rem;
+                    .box {
+                        color: $grey-text-color;
+                        flex-wrap: nowrap;
+                        height: 100px;
+                        border: $border-wider;
+                        border-radius: 10px;
+                        padding: 1rem;
+                        .title {
+                            color: $active-color;
+                            display: inline;
+                            font-weight: bold;
+                        }
+                        .public {
+                            display: inline;
+                            text-align: end;
+                            border: $border;
+                            border-radius: 10px;
+                            background-color: $main-color;
+                            padding: 0.3rem;
+                            padding-bottom: 0.2rem;
+                            padding-top: 0.2rem;
+                            font-size: 12px;
+                        }
+                        .description {
+                            display: block;
+                            padding-top: 1rem;
+                            padding-bottom: 1rem;
+                            font-size: 12px;
+                        }
+                        .fa-plane {
+                            color: green;
+                        }
+                        .language{
+                            margin-top: 1rem;
+                            font-size: 12px;
+                            display: flex;
+                            align-items: center;
+                            gap: 0.5rem;
+                            .circle {
+                                background-color: white;
+                                width: 0.8rem;
+                                height: 0.8rem;
+                                border-radius: 50%;
+                                display: inline-block;
+                            }
+                        }
+                    }
+                    $licznik: 1;
+                    @each $color in $loop-colors {
+                        .box:nth-of-type(#{$licznik}) {
+                            .circle {
+                                background-color: $color;
+                            }
+                        }
+                        $licznik: $licznik + 1;
+                    }
+                }
+                .contributions {
+                    margin-top: 2.5rem;
+                    .upper-panel {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: end;
+                        .setting {
+                            color: $grey-text-color;
+                            font-size: 0.8rem;
+                            background-color: $main-color;
+                            border: none;
+                            i {
+                                color: $grey-text-color;
+                            }
+                        }
+                        .setting:hover {
+                            color: $active-color;
+                            i {
+                                color: $active-color;
+                            }
+                        }
+                    }
+                    .this-calendar {
+                        display: flex;
+                        flex-wrap: wrap;
+                        border: $border;
+                        border-radius: 10px;
+                        margin-top: 1rem;
+                        padding: 1.5rem;
+                        font-size: 12px;
+                        gap: 1rem;
+                        .months {
+                            display: flex;
+                            justify-content: space-around;
+                            width: 100%;
+                            margin-left: 2.5rem;
+                            margin-right: 1rem;
+                        }
+                        .my-days {
+                            .day {
+                                margin-bottom: 1rem;
+                            }
+                        }
+                        .my-monster {
+                            display: grid;
+                            grid-template-rows: repeat(7, 1fr);
+                            grid-auto-flow: column dense;
+                            gap: 4px;
+                            .this-is-my-child {
+                                height: 11px;
+                                width: 11px;
+                                background-color: $color-of-my-child;
+                                border-radius: 3px;
+                            }
+                            // @for $index from 1 through 366 {
+                            //     @if [data-level="0"] grey
+                            //     @if [data-level="1"] lightgreen
+                            //     @if [data-level="2"] green
+                            //     @if [data-level="3"] darkgreen
+                            // }
+                            div:nth-of-type(50) {
+                                background-color: $color-of-my-child-lv1;
+                            }
+                            div:nth-of-type(250) {
+                                background-color: $color-of-my-child-lv4;
+                            }
+                            div:nth-of-type(300) {
+                                background-color: $color-of-my-child-lv2;
+                            }
+                        }
+                        .lower-panel {
+                            display: flex;
+                            justify-content: space-between;
+                            width: 100%;
+                            .learn {
+                                background-color: $main-color;
+                                border: none;
+                                color: $grey-text-color;
+                            }
+                            button:hover {
+                                color: $active-color;
+                            }
+                            .less-and-more {
+                                color: $grey-text-color;
+                                display: flex;
+                                gap: 5px;
+                                .colors {
+                                    width: 11px;
+                                    height: 11px;
+                                    display: inline;
+                                    border-radius: 3px;
+                                }
+                                div:nth-of-type(1) {
+                                    background-color: $color-of-my-child;
+                                }
+                                div:nth-of-type(2) {
+                                    background-color: $color-of-my-child-lv1;
+                                }
+                                div:nth-of-type(3) {
+                                    background-color: $color-of-my-child-lv2;
+                                }
+                                div:nth-of-type(4) {
+                                    background-color: $color-of-my-child-lv3;
+                                }
+                                div:nth-of-type(5) {
+                                    background-color: $color-of-my-child-lv4;
+                                }
+                            }
+                        }
+                    }
+                    .contribution-activity {
+                        margin-top: 2rem;
+                        display: flex;
+                        .left-side {
+                            width: 85%;
+                            display: flex;
+                            flex-wrap: wrap;
+                            .title {
+                                color: $main-text-color;
+                                font-size: 18px;
+                                margin-bottom: 1rem;
+                                width: 100%;
+                            }
+                            .month {
+                                margin-left: $margin-table-gap;
+                                color: $main-text-color;
+                                font-weight: bold;
+                                font-size: 13px;
+                                width: 15%;
+                            }
+                            .description {
+                                width: calc(70% - $margin-table-gap);
+                                padding-left: 15%;
+                                margin-top: 0.5rem;
+                                padding-top: 3rem;
+                                border-top: $border;
+                            }
+                            .activity-button {
+                                margin-top: 1.5rem;
+                                margin-bottom: 1.5rem;
+                                width: 100%;
+                                border: $border;
+                                background-color: $main-color;
+                                border-radius: 5px;
+                                color: $active-color;
+                                padding: 0.8rem;
+                                font-weight: bold;
+                            }
+                            .footer {
+                                font-size: 0.8rem;
+                                margin-bottom: 2rem;
+                                .blue {
+                                    color: $active-color;
+                                }
+                            }
+                        }
+                        .right-side {
+                            width: 15%;
+                            .year {
+                                margin-top: 1rem;
+                                color: $grey-text-color;
+                                width: 100%;
+                                margin-left: 1.5rem;
+                                padding-left: 1rem;
+                                height: 3rem;
+                                text-align: start;
+                                border-radius: 10px;
+                                background-color: $main-color;
+                                border: none;
+                            }
+                            #active {
+                                background-color: $active-color;
+                                color: $main-text-color;
+                            }
+                            button:hover {
+                                opacity: 70%;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+            .main-footer {
+                display: flex;
+                flex-wrap: wrap;
+                border-top: $border;
+                padding-top: 2rem;
+                .github-inc {
+                    display: flex;
+                    align-items: center;
+                    color: $grey-text-color;
+                    font-size: 0.9rem;
+                    i {
+                        margin-right: 0.5rem;
+                        font-size: 1.6rem;
+                    }
+                }
+                .buttons {
+                    margin-left: 4rem;
+                    display: flex;
+                    gap: 2rem;
+                    .footer-button {
+                        color: $active-color;
+                        border: none;
+                        background-color: $main-color;
+                    }
+                    button:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+            margin-bottom: 2rem;
+        }
+    }
+}

@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini github</title>
+    <link rel="stylesheet" href="github.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body class="body">
+    <div class="header">
+        <div class="higher">
+            <div class="left-side">
+                <div class="bar">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <div class="github-icon">
+                    <i class="fa fa-github"></i>
+                </div>
+                <div class="nickname">
+                    nickname
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="input">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder = "          Type / to search">
+                </div>
+                <button class="right-buttons"><i class="fa fa-plus"></i></button><button class="right-buttons"><i
+                        class="fa fa-shield"></i></button><button class="right-buttons"><i
+                        class="fa fa-code-fork"></i></button><button class="right-buttons"><i
+                        class="fa fa-folder"></i></button>
+                <div class="avatar"></div>
+            </div>
+        </div>
+        <div class="lower">
+            <div class="buttons-belt">
+                    <button class="header-buttons" id="active">
+                        <i class="fa fa-book"></i>
+                        <span>Overview</span>
+                    </button>
+                    <button class="header-buttons">
+                        <i class="fa fa-clone"></i>
+                        <span>Clone</span>
+                    </button>
+                    <button class="header-buttons">
+                        <i class="fa fa-bug"></i>
+                        <span>Bug</span>
+                    </button>
+                    <button class="header-buttons">
+                        <i class="fa fa-cloud"></i>
+                        <span>Cloud</span>
+                    </button>
+                    <button class="header-buttons">
+                        <i class="fa fa-star"></i>
+                        <span>Star</span>
+                    </button>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-section">
+            <div class="left-side">
+                <div class="big-avatar">
+                    <div class="lets-smile">
+                        <i class="fa fa-smile-o"></i>
+                    </div>
+                </div>
+                <div class="nickname">
+                    <span>nickname</span>
+                </div>
+                <button class="edit-profile">
+                    <span>Edit profile</span>
+                </button>
+                <div class="followers">
+                    <i class="fa fa-users"></i>
+                    <span class="number">1</span>
+                    <span class="text">follower</span>
+                    <span class="number">2</span>
+                    <span class="text">following</span>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="upper-part">
+                    <div class="title">Popular repositories</div>
+                    <button class="customize">Customize your pins</button>
+                </div>
+                <div class="list-of-repos">
+                    <div class="box">
+                        <div class="upper-part">
+                            <div class="title">Python_projects</div>
+                            <div class="public">public</div>
+                        </div>
+                        <span class="description">These are my own small python projects <i class="fa fa-plane"></i></span>
+                        <div class="language">
+                            <div class="circle"></div>
+                            Python
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="upper-part">
+                            <div class="title">Colorfull_mess-SCSS</div>
+                            <div class="public">public</div>
+                        </div>
+                        <span class="description">Quite nice but messy</span>
+                        <div class="language">
+                            <div class="circle"></div>
+                            HTML
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="upper-part">
+                            <div class="title">Scala-bility_and_flexibility</div>
+                            <div class="public">public</div>
+                        </div>
+                        <span class="description">Some weird functional programming</span>
+                        <div class="language">
+                            <div class="circle"></div>
+                            Scala
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="upper-part">
+                            <div class="title">Scripting_with_JavaScript</div>
+                            <div class="public">public</div>
+                        </div>
+                        <span class="description">Just reduce, asynchrony and objects</span>
+                        <div class="language">
+                            <div class="circle"></div>
+                            JavaScript
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="upper-part">
+                            <div class="title">SQL_typing</div>
+                            <div class="public">public</div>
+                        </div>
+                        <span class="description">Does someone have a question ?</span>
+                        <div class="language">
+                            <div class="circle"></div>
+                            SQL
+                        </div>
+                    </div>
+                </div>
+                <div class="contributions">
+                    <div class="upper-panel">
+                        <div class="contributions-counter">
+                            7 contributions in the last year
+                        </div>
+                        <button class="setting">
+                            Contribution settings
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                    </div>
+                    <div class="this-calendar">
+                        <div class="months">
+                            <div class="my-month">Aug</div>
+                            <div class="my-month">Sep</div>
+                            <div class="my-month">Oct</div>
+                            <div class="my-month">Nov</div>
+                            <div class="my-month">Dec</div>
+                            <div class="my-month">Jan</div>
+                            <div class="my-month">Feb</div>
+                            <div class="my-month">Mar</div>
+                            <div class="my-month">Apr</div>
+                            <div class="my-month">May</div>
+                            <div class="my-month">Jun</div>
+                            <div class="my-month">Jul</div>
+                            <div class="my-month">Aug</div>
+                        </div>
+                        <div class="my-days">
+                            <div class="day">Mon</div>
+                            <div class="day">Wed</div>
+                            <div class="day">Fri</div>
+                        </div>
+                        <div class="my-monster">
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                            <div class="this-is-my-child"></div>
+                        </div>
+                        <div class="lower-panel">
+                            <button class="learn">
+                                Learn how we count contributions </button>
+                            <div class="less-and-more">
+                                <span class="less">Less</span>
+                                <div class="colors"></div>
+                                <div class="colors"></div>
+                                <div class="colors"></div>
+                                <div class="colors"></div>
+                                <div class="colors"></div>
+                                <span class="more">More</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contribution-activity">
+                        <div class="left-side">
+                            <div class="title">Contribution activity</div>
+                            <div class="month">August 2023</div>
+                            <div class="description">
+                                loppiko has no activity yet for this period.
+                            </div>
+                            <button class="activity-button">
+                                Show more activity
+                            </button>
+                            <div class="footer">
+                                Seeing something unexpected? Take a look at the <span class="blue">GitHub profile guide.</span>
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <button class="year" id="active">2022</button>
+                            <button class="year">2023</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-footer">
+                <div class="github-inc">
+                    <i class="fa fa-github"></i>
+                    <span>© 2023 GitHub, Inc.</span>
+                </div>
+                <div class="buttons">
+                    <button class="footer-button">Terms</button>
+                    <button class="footer-button">Privacy</button>
+                    <button class="footer-button">Security</button>
+                    <button class="footer-button">Status</button>
+                    <button class="footer-button">Docs</button>
+                    <button class="footer-button">Contaxt Github</button>
+                    <button class="footer-button">Pricing</button>
+                    <button class="footer-button">API</button>
+                    <button class="footer-button">Training</button>
+                    <button class="footer-button">Blog</button>
+                    <button class="footer-button">About</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
